@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    color: white;
+
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('image/background.jpeg') no-repeat center center;    background-position: center;
+    height: 100%;
+    position: static;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header h2 {
+    font-size: 35px;
+    color: #B8621B;
+    margin: 5px;
+    padding: 10px;
+}
+
+.logo {
+    position: absolute;
+    color: #B8621B;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    border-radius: 50%;
+    box-shadow: 130px 10px, 132px 35px;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 120px;
+    top: 16px;
+    border-top: 20px solid #B8621B;
+    border-radius: 90% 0% 0% 0%;
+    transform: rotate(328deg);
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 140px;
+    top: 30px;
+    border-bottom: 20px solid #B8621B;
+    border-radius: 0% 0% 90% 0%;
+    transform: rotate(329deg);
+}
+
+nav,
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    transition: 1.5s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    color: #B8621B;
+}
+
+nav ul li a:hover {
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 1px;
+    color: #b8621b;
+    text-decoration: none;
+
+}
+
+.cofee_info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    width: 350px;
+    height: 350px;
+    background-color: #b8621b13;
+    backdrop-filter: blur(2px);
+    border: 1px solid #b8621b59;
+    border-radius: 0 75% 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cofee_info h3 {
+    position: absolute;
+    top: 15%;
+    font-size: 25px;
+    margin: 5px;
+    color: #B8621B;
+
+}
+
+.order {
+    margin: 1px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.order button {
+    width: 100%;
+    height: 100%;
+    background-color: #b8621b13;
+    backdrop-filter: blur(2px);
+    border: 1px solid #b8621b59;
+    border-radius: 75% 0 100% 0;
+    cursor: pointer;
+    font-size: 30px;
+    color: #B8621B;
+
+}
+
+.order button:hover {
+    background-color: #b8621b;
+    color: #291301;
+
+}
+
+.shadow {
+    background: linear-gradient(to top, #b8621b8a, #2913010c);
+    width: 100%;
+    height: 50px;
+}
+
+.shadow_revers {
+    background: linear-gradient(to top, #2913010c, #b8621b8a);
+    width: 100%;
+    height: 50px;
+
+}
+
+.cofee_type {
+    background-color: #b8621b8f;
+    width: 100%;
+    height: auto;
+}
+
+.cofee_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cofee_item i,
+.cofee_item h3 {
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    color: #291301;
+}
+
+.cofee_item h3 {
+    font-weight: bold;
+    text-decoration: underline 5px;
+    text-underline-offset: 0.5em;
+    box-shadow: 0px 0px 10px 10px;
+}
+
+.cofee_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    margin: 0 70px 55px;
+    width: 200px;
+
+}
+
+.card_list {}
+
+.card_item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #291301;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.country_cofee {
+    width: 75%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 10px #B8621B;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+.country {
+    width: 25%;
+    padding: 5px;
+
+}
+
+.card_item h4,
+.card_item a span {
+    color: #B8621B;
+}
+
+.about_uss {
+    width: 100%;
+    background-color: #00000012;
+}
+
+.about_us {
+    background-color: #B8621B;
+    height: 100%;
+    margin: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1%;
+}
+
+.about_h {
+    margin: 10px;
+    box-shadow: 0px 10px 15px 0px;
+}
+
+.about_h h5 {
+    margin: 5px;
+}
+
+.cofee_shop {
+    display: flex;
+    width: 45%;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cofee_shop img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.about_info {
+    width: 54%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_info i {
+    margin: 5px;
+}
+
+.order_now {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.order_cart {
+    border-radius: 5px;
+    width: 80%;
+    height: 350px;
+    margin: 5px;
+    box-shadow: 0px 0px 10px 10px #291301;
+    display: flex;
+
+}
+
+.order_list {
+    border-radius: 5px;
+    background-color: #B8621B;
+    width: 50%;
+
+}
+
+.order_item {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.order_item:hover {
+    background-color: #291301;
+    color: #B8621B;
+
+    .btn {
+        color: #B8621B;
+
+    }
+
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 5px #B8621B;
+}
+
+.order_item img {
+    width: 15%;
+    border-radius: 30%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.order_item button {
+    color: #291301;
+    border-radius: 10px;
+    margin: 5px;
+    background: none;
+    font-size: 13px;
+    width: 100%;
+    font-weight: 700;
+}
+
+.order_item button:hover {
+    color: #B8621B;
+}
+
+.check {
+    margin: 5px;
+}
+
+.cart_list {
+    background-color: #b8621bb3;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.cart_total {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+}
+
+.total {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cart table {
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    text-transform: capitalize;
+    overflow: hidden;
+
+}
+
+.cart table td {
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+footer {
+    height: 300px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B8621B;
+
+}
+
+footer p {
+    font-size: 25px;
+}
+
+@media (max-width:900px) {
+    .logo {
+        display: none;
+    }
+
+    .cofee_info {
+        display: none;
+    }
+    nav{
+
+    }
+}

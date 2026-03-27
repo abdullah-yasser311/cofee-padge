@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <header>
+        <h2>cofee shope</h2>
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a onclick="typec()" id="typee" href="#type">type</a></li>
+                <li><a id="price_p" href="">price</a></li>
+                <li><a id="about_us" href="#about">about us</a></li>
+            </ul>
+        </nav>
+        <div class="cofee_info">
+            <div class="about">
+                <h3>Our coffee <br> has a taste <br> and <br>an effect</h3>
+            </div>
+            <div class="order"> <button>order now</button>
+            </div>
+        </div>
+
+    </header>
+    <div class="shadow"></div>
+    <div class="cofee_type" id="type">
+        <div class="cofee_item">
+            <i class="fa-solid fa-mug-hot"></i>
+            <h3>cofee type</h3>
+            <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <div class="cofee_container swiper">
+            <div class="slider">
+                <div class="card_list swiper-wrapper">
+                    <div class="card_item swiper-slide">
+                        <img class="country_cofee" src="image/cofee1.jpeg" alt="">
+                        <img class="country" src="image/brazil.png" alt="">
+                        <h4>brazilian cofee</h4>
+                        <p><a href="#"><span class="price">price :</span> 25$ k/kg </a></p>
+                    </div>
+                    <div class="card_item swiper-slide">
+                        <img class="country_cofee" src="image/cofee4.jpeg" alt="">
+                        <img class="country" src="image/colombia.png" alt="">
+                        <h4>colombia cofee</h4>
+                        <p><a href="#"><span class="price">price :</span> 30$ k/kg </a></p>
+                    </div>
+                    <div class="card_item active swiper-slide">
+                        <img class="country_cofee" src="image/cofee1.jpeg" alt="">
+                        <img class="country" src="image/kenya.png" alt="">
+                        <h4>kenya cofee</h4>
+                        <p><a href="#"><span class="price">price :</span> 20$ k/kg </a></p>
+                    </div>
+                    <div class="card_item swiper-slide">
+                        <img class="country_cofee" src="image/cofee4.jpeg" alt="">
+                        <img class="country" src="image/jamaica.png" alt="">
+                        <h4>jamaica cofee</h4>
+                        <p><a href="#"><span class="price">price :</span> 16.5$ k/kg </a></p>
+                    </div>
+                    <div class="card_item swiper-slide">
+                        <img class="country_cofee" src="image/cofee1.jpeg" alt="">
+                        <img class="country" src="image/ethiopia.png" alt="">
+                        <h4>ethiopia cofee</h4>
+                        <p><a href="#"><span class="price">price :</span> 9.6$ k/kg </a></p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow_revers"></div>
+    <div class="about_uss" id="about">
+        <div class="about_us">
+            <div class="about_h">
+                <h5>about us</h5>
+            </div>
+            <div class="cofee_shop">
+
+                <img src="image/shop.jpg" alt="">
+                <img src="image/shop2.jpg" alt="">
+                <img src="image/shop3.jpg" alt="">
+
+                <div class="about_info">
+                    <p><i class="fa-solid fa-location-dot"></i>Via Fratelli Gracchi 42,
+                        20092, Cinisello Balsamo (MI) Italy</p>
+                    <p><i class="fa-solid fa-phone"></i>02 3930 8850</p>
+                    <p><i class="fa-regular fa-envelope"></i>info@caffe.com</p>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+    <div class="order_now">
+        <div class="order_cart">
+            <div class="order_list">
+                <div class="order_item" id="brazil">
+                    <img src="image/brazil.png" alt="">
+                    <button class="btn">barzilian cofee</button>
+                </div>
+                <div class="order_item" id="ethiopia">
+                    <img src="image/ethiopia.png" alt="">
+                    <button class="btn">ethiopia cofee</button>
+                </div>
+                <div class="order_item" id="colombia">
+                    <img src="image/colombia.png" alt="">
+                    <button class="btn">colombia cofee</button>
+                </div>
+                <div class="order_item" id="kenya">
+                    <img src="image/kenya.png" alt="">
+                    <button class="btn">kenya cofee</button>
+                </div>
+                <div class="order_item" id="jamaica">
+                    <img src="image/jamaica.png" alt="">
+                    <button class="btn">jamaica cofee</button>
+                </div>
+
+            </div>
+            <div class="cart_list">
+                <div class="cart">
+                    <h5>cart</h5> 
+                    <table>
+                        <tr>
+                            <td>n</td>
+                            <td>type</td>
+                            <td>price</td>
+                            <td>k/g</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cart_total">
+                    <small id="total">total :</small>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+
+                <div class="cart_shop">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <p>nice order for you</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
